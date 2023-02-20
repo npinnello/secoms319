@@ -1,0 +1,170 @@
+{
+    "Ceiling Fan": [
+        {
+            "productId": "product001_1",
+            "productName": "Ceiling Fan",
+            "size": "65 inches",
+            "brand": "Minka",
+            "shortDescription": "Aire Xtreme H2O Coal Wet",
+            "Description": "Remote Control",
+            "priceList": "489.95"
+        },
+        {
+            "productId": "product001_2",
+            "productName": "Ceiling Fan",
+            "size": "65 inches",
+            "brand": "Minka",
+            "shortDescription": "Aire Windmolen Textured Coal LED Wet",
+            "Description": "Smart",
+            "priceList": "569.95"
+        },
+        {
+            "productId": "product001_3",
+            "productName": "Ceiling Fan",
+            "size": "60 inches",
+            "brand": "Minka",
+            "shortDescription": "Aire Dream Star Graphite Steel LED",
+            "Description": "Remote Control",
+            "priceList": "799.95"
+        },
+        {
+            "productId": "product002_1",
+            "productName": "Ceiling Fan",
+            "size": "56 inches",
+            "brand": "Mach 5",
+            "shortDescription": "Oil-Rubbed Bronze and Koa LED Damp",
+            "Description": "Remote Control",
+            "priceList": "379.95"
+        },
+        {
+            "productId": "product003_1",
+            "productName": "Ceiling Fan",
+            "size": "60 inches",
+            "brand": "Monte Carlo Maverick",
+            "shortDescription": "Matte Black",
+            "Description": "Remote Control",
+            "priceList": "659.99"
+        },
+        {
+            "productId": "product003_2",
+            "productName": "Ceiling Fan",
+            "size": "70 inches",
+            "brand": "Monte Carlo Maverick",
+            "shortDescription": "Matte Black",
+            "Description": "Remote Control",
+            "priceList": "743.99"
+        },
+        {
+            "productId": "product003_3",
+            "productName": "Ceiling Fan",
+            "size": "70 inches",
+            "brand": "Monte Carlo Maverick",
+            "shortDescription": "Walnut Wood",
+            "Description": "Remote Control",
+            "priceList": "743.99"
+        },
+        {
+            "productId": "product003_4",
+            "productName": "Ceiling Fan",
+            "size": "70 inches",
+            "brand": "Monte Carlo Maverick",
+            "shortDescription": "Aged Pewter",
+            "Description": "Remote Control",
+            "priceList": "743.99"
+        },
+        {
+            "productId": "product004_1",
+            "productName": "Ceiling Fan",
+            "size": "52 inches",
+            "brand": "Casa",
+            "shortDescription": "Delta-Wing Bronze Damp Outdoor LED",
+            "Description": "Remote Control",
+            "priceList": "249.95"
+        },
+        {
+            "productId": "product004_2",
+            "productName": "Ceiling Fan",
+            "size": "56 inches",
+            "brand": "Casa",
+            "shortDescription": "Vieja Rally Bronze Damp Rated LED",
+            "Description": "Remote Control",
+            "priceList": "299.99"
+        }
+    ],
+    "Wall Light": [
+        {
+            "productId": "product011_1",
+            "productName": "Wall Light",
+            "size": "11 inches",
+            "brand": "Hinkley Sawyer",
+            "shortDescription": "High Sequoia Wood Finish Rustic",
+            "Description": "Wall Sconce",
+            "priceList": "127.2"
+        },
+        {
+            "productId": "product012_1",
+            "productName": "Wall Light",
+            "size": "17 inches",
+            "brand": "Feiss Loras",
+            "shortDescription": "High Dark Weathered Iron",
+            "Description": "Wall Sconce",
+            "priceList": "115.98"
+        },
+        {
+            "productId": "product013_1",
+            "productName": "Wall Light",
+            "size": "14 inches",
+            "brand": "Menlo Park",
+            "shortDescription": "High Old Silver by Troy Lighting",
+            "Description": "Wall Sconce",
+            "priceList": "265.6"
+        },
+        {
+            "productId": "product014_1",
+            "productName": "Wall Light",
+            "size": "11 1/4 inches",
+            "brand": "Hinkley Congress",
+            "shortDescription": "High Clear Glass Chrome",
+            "Description": "Wall Sconce",
+            "priceList": "175.2"
+        },
+        {
+            "productId": "product015_1",
+            "productName": "Wall Light",
+            "size": "8 1/4 inches",
+            "brand": "Hudson Valley Barron",
+            "shortDescription": "H Polished Nickel Sconce",
+            "Description": "Wall Sconce",
+            "priceList": "315.2"
+        }
+    ],
+    "Jacket": [
+        {
+            "productId": "product030_1",
+            "productName": "Jacket",
+            "size": "Sizes S (34 to 36) M (38 to 40) L (42 to 44) XL (46 to 48) XXL (50 to 52)",
+            "brand": "Spyfire",
+            "shortDescription": "Spyfire Jacket",
+            "Description": "Kuhl sleek warm jacket boasts a baffled water-repellent nylon/spandex shell with 800-fill-power goose down. Reinforced shoulders zipper closures. Machine wash",
+            "priceList": "249"
+        },
+        {
+            "productId": "product031_1",
+            "productName": "Jacket",
+            "size": "Sizes XS (0 to 2) S (4 to 6) M (8 to 10) L (12 to 14) XL (16 to 18) XXL (20 to 22). Approx. 46-1/2 L inches",
+            "brand": "Hotchkiss",
+            "shortDescription": "Hotchkiss Quilted Jacket",
+            "Description": "Quilted longline jacket with shirt tail hem matching corduroy collar and patch pockets. Polyester. Dry clean.",
+            "priceList": "198"
+        },
+        {
+            "productId": "product032_1",
+            "productName": "Jacket",
+            "size": "Sizes S M L XL XXL.",
+            "brand": "Tribal Stripe",
+            "shortDescription": "Tribal Stripe Two-Pocket Jacket",
+            "Description": "Yarn-dyed indigenous-inspired pattern will catch your attention in this chambray-lined button front shirt with two pockets corduroy-lined neckline and side gussets. Cotton. Machine wash.",
+            "priceList": "178"
+        }
+    ]
+}
