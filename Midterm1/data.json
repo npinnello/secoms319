@@ -1,0 +1,71 @@
+{
+    "Designs": [
+   
+        {
+            "productId": "product001_1",
+            "productName": "Iowa State",
+            "size": "",
+            "shortDescription": "Iowa State University Logo",
+            "priceList": ""
+        },
+        {
+            "productId": "product001_2",
+            "productName": "Iowa",
+            "size": "",
+            "shortDescription": "University of Iowa Logo",
+            "priceList": ""
+        },
+        {
+            "productId": "product001_3",
+            "productName": "Wisconsin",
+            "size": "",
+            "shortDescription": "Wisconsin Logo",
+            "priceList": ""
+        },
+        {
+            "productId": "product002_1",
+            "productName": "Springfield",
+            "size": "",
+            "shortDescription": "Springfield University Logo",
+            "priceList": ""
+        },
+        {
+            "productId": "product002_2",
+            "productName": "Ceiling Fan",
+            "size": "70 inches",
+            "shortDescription": "Matte Black",
+            "priceList": "743.99"
+        },
+        {
+            "productId": "product002_3",
+            "productName": "Ceiling Fan",
+            "size": "70 inches",
+            "shortDescription": "Walnut Wood",
+            "priceList": "743.99"
+        },
+        {
+            "productId": "product003_1",
+            "productName": "Ceiling Fan",
+            "brand": "Monte Carlo Maverick",
+            "shortDescription": "Aged Pewter",
+            "priceList": "743.99"
+        },
+        {
+            "productId": "product003_2",
+            "productName": "Ceiling Fan",
+            "size": "52 inches",
+            "shortDescription": "Delta-Wing Bronze Damp Outdoor LED",
+            "priceList": "249.95"
+        },
+        {
+            "productId": "product003_3",
+            "productName": "Ceiling Fan",
+            "size": "56 inches",
+            "shortDescription": "Vieja Rally Bronze Damp Rated LED",
+            "priceList": "299.99"
+        }
+    ]
+    
+       
+    
+}
