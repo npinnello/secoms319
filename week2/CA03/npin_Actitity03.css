@@ -1,0 +1,38 @@
+
+                h1 {
+                    color: blue;
+                    background-color: yellow;
+                    border: 1px solid black;
+                  
+                  }
+                  
+                  p {
+                    color: red;
+                  }
+                  .myh1class{
+                    color: blue;
+                    background-color: transparent;
+                    border: 1px solid black;
+                    font-family: 'Courier New', Courier, monospace;
+                    }
+
+                  .mypclass{
+color: black;
+font-weight: bolder;
+}
+.newh1 {
+    color: whitesmoke;
+    background-color: brown;
+    font-family: cursive
+  }
+  .newp {
+    color:whitesmoke;
+    background-color: dimgrey;
+    font-family: monospace
+  }
+  footer {
+    text-align: center;
+    padding: 1px;
+    background-color: rgba(105, 105, 105, 0.195);
+    color: rgb(93, 88, 88);
+}

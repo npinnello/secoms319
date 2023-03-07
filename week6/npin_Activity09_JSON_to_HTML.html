@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read JSON file just using HTML</title>
+</head>
+
+<body>
+<p>   Author: Nick Pinnello<br>
+    ISU Netid : npin@iastate.edu<br>
+    Date : February 20th, 2023</p>
+
+    
+    <div id="myData">
+        <div id="myProduct"></div>
+    </div>
+    
+
+    <script type="text/javascript">
+        fetch('./Catalog_of_Products.json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+                appendData(data);
+            })
+            .catch(function (err) {
+                console.log('error:' + err);
+            })
+
+        function appendData(data) {
+            let mainContainer = document.getElementById("myData");
+            for (let productName in data) {
+                let div = document.createElement("div");
+                div.innerHTML = `<br> <br> <h2> ${productName} </h2>`;
+                mainContainer.appendChild(div);
+                let mainContainer2 = document.getElementById("myProduct");
+            for (let element of data[productName]) {
+                console.log(element);
+                let div2 = document.createElement("div");
+                div2.innerHTML = `${element["productId"]} : ${element["shortDescription"]} <br>`;
+                mainContainer.appendChild(div2);
+            }
+            
+        }
+
+       
+}
+    </script>
+
+
+</body>
+
+</html>

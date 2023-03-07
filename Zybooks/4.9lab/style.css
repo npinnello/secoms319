@@ -1,0 +1,187 @@
+body
+
+{
+
+font-family: Roboto, Helvetica, sans-serif;
+
+}
+
+/*Define styling for container*/
+
+.container
+
+{
+
+text-align: center;
+
+margin: 5px;
+
+font-size: 13px;
+
+}
+
+/*Define styling for the h1 tag*/
+
+.container h1
+
+{
+
+font-size: 16px;
+
+color: #444444;
+
+text-align: center;
+
+}
+
+/*Define required styling rules for the */
+
+/*offer class*/
+
+.offer
+
+{
+
+display: inline-block;
+
+width: 400px;
+
+margin: 4px;
+
+text-align: center;
+
+border: 1px solid #cccccc;
+
+border-radius: 1px;
+
+box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+
+}
+
+/*Define required styling rules for the */
+
+/*offerTitle class*/
+
+.offerTitle
+
+{
+
+font-weight: bold;
+
+font-size: 14px;
+
+color: #ffffff;
+
+background-color: #00b3b3;
+
+margin: 0px;
+
+padding: 15px;
+
+}
+
+/*Define required styling rules for */
+
+/*the offerContents class*/
+
+.offerContents
+
+{
+
+padding: 20px;
+
+border-bottom-left-radius: 2px;
+
+border-bottom-right-radius: 2px;
+
+background-color: #fafafa;
+
+}
+
+/*Define required styling rules for the */
+
+/*table tag*/
+
+table
+
+{
+
+width: 100%;
+
+background-color: #ffffff;
+
+box-shadow: 0px 2px 2px #dddddd, 0px 0px 5px #dddddd;
+
+border-spacing: 0;
+
+}
+
+/*Define required styling rules for the th */
+
+/*tag of the table tag*/
+
+table th
+
+{
+
+font-size: 12px;
+
+font-weight: bold;
+
+color: #777777;
+
+padding: 10px;
+
+}
+
+/*Define required styling rules for the td */
+
+/*tag of the table tag*/
+
+table td
+
+{
+
+font-weight: 300;
+
+color: #444444;
+
+padding-left: 10px;
+
+padding-right: 10px;
+
+padding-top: 20px;
+
+padding-bottom: 20px;
+
+}
+
+/*Define required styling rules for the */
+
+/*th and td tags of the table tag*/
+
+table td,th
+
+{
+
+margin: 0;
+
+text-align: left;
+
+border-bottom: 1px solid #f1f1f1;
+
+}
+
+/*Define required styling rules for the */
+
+/*finalValue class*/
+
+.finalValue
+
+{
+
+font-weight: bold;
+
+color: #2222ff;
+
+}
