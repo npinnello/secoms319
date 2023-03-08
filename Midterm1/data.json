@@ -4,64 +4,64 @@
         {
             "productId": "product001_1",
             "productName": "Iowa State",
-            "size": "",
+            "size": "8ft x 10ft",
             "shortDescription": "Iowa State University Logo",
             "priceList": "$200"
         },
         {
             "productId": "product001_2",
             "productName": "Iowa",
-            "size": "",
+            "size": "8ft x 10ft",
             "shortDescription": "University of Iowa Logo",
             "priceList": "$200"
         },
         {
             "productId": "product001_3",
             "productName": "Wisconsin",
-            "size": "",
+            "size": "8ft x 10ft",
             "shortDescription": "Wisconsin Logo",
             "priceList": "$200"
         },
         {
             "productId": "product002_1",
             "productName": "Springfield",
-            "size": "",
+            "size": "8ft x 10ft",
             "shortDescription": "Springfield University Logo",
             "priceList": "$200"
         },
         {
             "productId": "product002_2",
-            "productName": "Ceiling Fan",
-            "size": "",
-            "shortDescription": "Matte Black",
+            "productName": "Air Force",
+            "size": "8ft x 10ft",
+            "shortDescription": "Air Force Logo",
             "priceList": "$200"
         },
         {
             "productId": "product002_3",
-            "productName": "Ceiling Fan",
-            "size": "70 inches",
-            "shortDescription": "Walnut Wood",
+            "productName": "St. Thomas",
+            "size": "8ft x 10ft",
+            "shortDescription": "St. Thomas College Logo",
             "priceList": "$200"
         },
         {
             "productId": "product003_1",
-            "productName": "Ceiling Fan",
-            "size": "52 inches",
-            "shortDescription": "Aged Pewter",
+            "productName": "UND",
+            "size": "8ft x 10ft",
+            "shortDescription": "University of North Dakota Logo",
             "priceList": "$200"
         },
         {
             "productId": "product003_2",
-            "productName": "Ceiling Fan",
-            "size": "52 inches",
-            "shortDescription": "Delta-Wing Bronze Damp Outdoor LED",
+            "productName": "UWEC",
+            "size": "8ft x 10ft",
+            "shortDescription": "University of Wisconsin Eau Claire Logo",
             "priceList": "$200"
         },
         {
             "productId": "product003_3",
-            "productName": "Ceiling Fan",
-            "size": "56 inches",
-            "shortDescription": "Vieja Rally Bronze Damp Rated LED",
+            "productName": "American Flag",
+            "size": "8ft x 10ft",
+            "shortDescription": "American Flag Logo",
             "priceList": "$200"
         }
     ]
