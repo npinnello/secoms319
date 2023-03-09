@@ -1,7 +1,11 @@
 
 body {
+<<<<<<< HEAD
   padding-top: 3rem;
   padding-bottom: 3rem;
+=======
+  padding: 3rem;
+>>>>>>> c29cfc8e25839352ceed9942d420dea8d05c7190
   color: #0e0101;
 }
 

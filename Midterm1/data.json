@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "Designs": [
    
@@ -69,3 +70,76 @@
        
     
 }
+=======
+{
+    "Designs": [
+   
+        {
+            "productId": "product001_1",
+            "productName": "Iowa State",
+            "size": "8ft x 10ft",
+            "shortDescription": "Iowa State University Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product001_2",
+            "productName": "Iowa",
+            "size": "8ft x 10ft",
+            "shortDescription": "University of Iowa Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product001_3",
+            "productName": "Wisconsin",
+            "size": "8ft x 10ft",
+            "shortDescription": "Wisconsin Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product002_1",
+            "productName": "Springfield",
+            "size": "8ft x 10ft",
+            "shortDescription": "Springfield University Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product002_2",
+            "productName": "Air Force",
+            "size": "8ft x 10ft",
+            "shortDescription": "Air Force Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product002_3",
+            "productName": "St. Thomas",
+            "size": "8ft x 10ft",
+            "shortDescription": "St. Thomas College Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product003_1",
+            "productName": "UND",
+            "size": "8ft x 10ft",
+            "shortDescription": "University of North Dakota Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product003_2",
+            "productName": "UWEC",
+            "size": "8ft x 10ft",
+            "shortDescription": "University of Wisconsin Eau Claire Logo",
+            "priceList": "$200"
+        },
+        {
+            "productId": "product003_3",
+            "productName": "American Flag",
+            "size": "8ft x 10ft",
+            "shortDescription": "American Flag Logo",
+            "priceList": "$200"
+        }
+    ]
+    
+       
+    
+}
+>>>>>>> c29cfc8e25839352ceed9942d420dea8d05c7190
