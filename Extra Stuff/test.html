@@ -68,23 +68,25 @@
         -webkit-overflow-scrolling: touch;
       }
     </style>
-
+  <script type="text/javascript">
+    fetch('./data.json')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error:' + err);
+        })
+        </script>
 <script>
 
-    $(function() {
-
-
-   var people = [];
-
-   $.getJSON('people.json', function(data) {
-       $.each(data.person, function(i, f) {
-          var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-           "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-           $(tblRow).appendTo("#userdata tbody");
-     });
-
-   });
-
+Designs.forEach((item, index) => {
+  let img = new Image();
+  img.src = item.img;
+  tile = document.getElementsByClassName('tile-image' + (index + 1))[0];
+  tile.appendChild(img);
 });
 </script>
 
@@ -142,7 +144,7 @@
 
 <main>
 
-  <section class="py-5 text-center container" style="margin-bottom: -7rem;">
+  <!-- <section class="py-5 text-center container" style="margin-bottom: -7rem;">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-dark">Gallery</h1>
@@ -169,7 +171,7 @@
           <div class="card shadow-sm">
 
            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-           <img src="./images/Iowa St 6_24.jpeg " alt="Iowa State">
+           <!-- <img src="./images/Iowa St 6_24.jpeg " alt="Iowa State">
             <div class="card-body">
               <h3 class="card-text">Iowa State University</h3>
               <div class="d-flex justify-content-between align-items-center">
@@ -184,9 +186,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm"> -->
            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-           <img src="./images/Iowa 6_1.jpeg" alt="Iowa University">
+           <!-- <img src="./images/Iowa 6_1.jpeg" alt="Iowa University">
             <div class="card-body">
               <h3 class="card-text">University of Iowa</h3>
               <div class="d-flex justify-content-between align-items-center">
@@ -200,9 +202,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm"> -->
          <!--   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-         <img src="./images/Wisconsin 6_21.jpeg"alt="American Flag">
+         <!-- <img src="./images/Wisconsin 6_21.jpeg"alt="American Flag">
             <div class="card-body">
               <h3 class="card-text">Wisconsin</h3>
               <div class="d-flex justify-content-between align-items-center">
@@ -216,9 +218,9 @@
         </div>
 
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm"> -->
            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-           <img src="./images/Springfield 6_17.jpeg"alt="Springfield">
+           <!-- <img src="./images/Springfield 6_17.jpeg"alt="Springfield">
             <div class="card-body">
               <h3 class="card-text">Springfield College</h3>
               <div class="d-flex justify-content-between align-items-center">
@@ -231,9 +233,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm"> -->
            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-           <img src="./images/Air Force 6_16.jpeg"alt="Air Force">
+           <!-- <img src="./images/Air Force 6_16.jpeg"alt="Air Force">
             <div class="card-body">
               <h3 class="card-text">Air Force</h3>
               <div class="d-flex justify-content-between align-items-center">
@@ -246,9 +248,9 @@
           </div>
         </div>
         <div class="col">
-          <div class="card shadow-sm">
+          <div class="card shadow-sm"> -->
            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-           <img src="./images/St. Thomas 6_22.jpeg"alt="St Thomas">
+           <!-- <img src="./images/St. Thomas 6_22.jpeg"alt="St Thomas">
             <div class="card-body">
               <h3 class="card-text">St. Thomas</h3>
               <div class="d-flex justify-content-between align-items-center">
@@ -262,9 +264,9 @@
         </div>
 
         <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm"> -->
              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-             <img src="./images/UND 6_15.jpeg"alt="UND">
+             <!-- <img src="./images/UND 6_15.jpeg"alt="UND">
               <div class="card-body">
                 <h3 class="card-text">University of North Dakota</h3>
                 <div class="d-flex justify-content-between align-items-center">
@@ -277,9 +279,9 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm"> -->
              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-             <img src="./images/UWEC 6_9.jpeg"alt="UWEC">
+             <!-- <img src="./images/UWEC 6_9.jpeg"alt="UWEC">
               <div class="card-body">
                 <h3 class="card-text">University of Wisconsin Eau Claire</h3>
                 <div class="d-flex justify-content-between align-items-center">
@@ -292,9 +294,9 @@
             </div>
           </div>
           <div class="col">
-            <div class="card shadow-sm">
+            <div class="card shadow-sm"> -->
              <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>-->
-             <img src="./images/American Flag 7_1.jpeg"alt="American Flag">
+             <!-- <img src="./images/American Flag 7_1.jpeg"alt="American Flag">
               <div class="card-body">
                 <h3 class="card-text">American Flag</h3>
                 <div class="d-flex justify-content-between align-items-center">
@@ -316,7 +318,7 @@
     </p>
     <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
   </div>
-</footer>
+</footer> --> -->
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

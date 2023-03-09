@@ -1,22 +1,26 @@
+// {
+//     "images": [
+//       {
+//         "location": "./Iowa St 6_24.jpeg",
+//         "data": 
+//           {
+//             "file_name": "Iowa State",
+//             "source": "openimage dataset"
+//           }
+//       }
+//     ]
+//   }
+
 {
-    "person": [
-        {
-            "firstName": "Clark",
-            "lastName": "Kent",
-            "job": "Reporter",
-            "roll": 20
-        },
-        {
-            "firstName": "Bruce",
-            "lastName": "Wayne",
-            "job": "Playboy",
-            "roll": 30
-        },
-        {
-            "firstName": "Peter",
-            "lastName": "Parker",
-            "job": "Photographer",
-            "roll": 40
-        }
-    ]
- }
+    "tiles" : [
+    {
+      "img" : "https://picsum.photos/200/300"
+    },
+    {
+      "img" : "https://picsum.photos/200/300"
+    },
+    {
+      "img" : "https://picsum.photos/200/300"
+    }
+   ]
+  }

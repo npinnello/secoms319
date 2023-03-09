@@ -104,6 +104,19 @@
 
 <main>
 
+  <script type="text/javascript">
+    fetch('./data.json')
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error:' + err);
+        })
+        </script>
+
   <section class="py-5 text-center container" style="margin-bottom: -7rem;">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">

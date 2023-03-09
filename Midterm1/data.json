@@ -2,11 +2,13 @@
     "Designs": [
    
         {
+            "img": "./NEW logo.jpg",
             "productId": "product001_1",
             "productName": "Iowa State",
             "size": "8ft x 10ft",
             "shortDescription": "Iowa State University Logo",
-            "priceList": "$200"
+            "priceList": "$200",
+            "image": "./"
         },
         {
             "productId": "product001_2",

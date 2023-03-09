@@ -11,13 +11,13 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  color: blueviolet;
+  color: rgb(156, 154, 158);
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-  color: gold;
+  color: rgb(235, 240, 240);
 }
 
 /* Declare heights because of positioning of img element */
@@ -34,7 +34,7 @@ body {
 .marketing .col-lg-4 {
   margin-bottom: 1.5rem;
   text-align: center;
-  color: brown;
+  color: rgb(55, 8, 247);
 
 }
 /* rtl:begin:ignore */
@@ -50,12 +50,14 @@ body {
 
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  
 }
 
 /* Thin out the marketing headings */
 /* rtl:begin:remove */
 .featurette-heading {
   letter-spacing: -.05rem;
+  text-align: end;
 }
 
 /* rtl:end:remove */
@@ -74,7 +76,11 @@ body {
 
   .featurette-heading {
     font-size: 50px;
+    text-align: right;
   }
+}
+.lead{
+text-align: end;
 }
 
 @media (min-width: 62em) {
