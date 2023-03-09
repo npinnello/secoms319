@@ -15,11 +15,8 @@ body {
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-<<<<<<< HEAD
   color: rgb(235, 240, 240);
-  text-align: end;
-=======
->>>>>>> 3f3ec4deaeed95f9781292158f4010fe36c3d288
+  text-align: center;
 }
 
 /* Declare heights because of positioning of img element */
