@@ -11,21 +11,47 @@ body {
 /* Carousel base class */
 .carousel {
   margin-bottom: 4rem;
-  color: rgb(156, 154, 158);
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-  color: rgb(235, 240, 240);
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 100%;
+.carousel__image {
   width: 100%;
-  color: brown;
+  height: 100%;
+  object-fit: cover;
+}
 
+.carousel__track-container {
+  background: lightgreen;
+  position: relative;
+  height: 100%;
+}
+
+.carousel_track {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.carousel__button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.carousel__button img{
+  width: 12px;
 }
 
 
