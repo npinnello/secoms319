@@ -1,26 +1,30 @@
-// {
-//     "images": [
-//       {
-//         "location": "./Iowa St 6_24.jpeg",
-//         "data": 
-//           {
-//             "file_name": "Iowa State",
-//             "source": "openimage dataset"
-//           }
-//       }
-//     ]
-//   }
-
 {
-    "tiles" : [
-    {
-      "img" : "https://picsum.photos/200/300"
-    },
-    {
-      "img" : "https://picsum.photos/200/300"
-    },
-    {
-      "img" : "https://picsum.photos/200/300"
-    }
-   ]
+  "movies": [
+  {
+  "movieId": "1234",
+  "title": "Avengers",
+  "year": 2012,
+  "url": "https://freepngimg.com/thumb/avengers/5-2-avengers-png-picture.png"
+  },
+  {
+  "movieId": "A124",
+  "title": "The Last Airbender",
+  "year": 2005,
+  "url": "https://freepngimg.com/save/37589-aang-transparent-background/480x486"
+  },
+  {
+  "movieId": "76788",
+  "title": "The Iron Giant",
+  "year": 1999,
+  "url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/The_Iron_Giant_poster.JPG/220px-The_Iron_Giant_poster.JPG"
+  },
+  {
+  "movieId": "BB124",
+  "title": "Mulan",
+  "year": 1998,
+  "url": "https://freepngimg.com/thumb/disney/113364-picture-mulan-disney-free-photo.png"
   }
+  ]
+  }
+
+ 
