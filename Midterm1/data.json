@@ -7,8 +7,8 @@
             "productName": "Iowa State",
             "size": "8ft x 10ft",
             "shortDescription": "Iowa State University Logo",
-            "priceList": "$200",
-            "image": "./"
+            "priceList": "$200"
+            
         },
         {
             "productId": "product001_2",
