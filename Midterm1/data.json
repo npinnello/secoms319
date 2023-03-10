@@ -4,6 +4,7 @@
         {
             
             "productId": "product001_1",
+            "url": "./images/Iowa St 6_24.jpeg",
             "productName": "Iowa State",
             "size": "8ft x 10ft",
             "shortDescription": "Iowa State University Logo",
@@ -12,6 +13,7 @@
         },
         {
             "productId": "product001_2",
+            "url": "./images/Iowa 6_1.jpeg",
             "productName": "Iowa",
             "size": "8ft x 10ft",
             "shortDescription": "University of Iowa Logo",
@@ -19,6 +21,7 @@
         },
         {
             "productId": "product001_3",
+            "url": "./images/Wisconsin 6_21.jpeg",
             "productName": "Wisconsin",
             "size": "8ft x 10ft",
             "shortDescription": "Wisconsin Logo",
@@ -26,6 +29,7 @@
         },
         {
             "productId": "product002_1",
+            "url": "./images/Springfield 6_17.jpeg",
             "productName": "Springfield",
             "size": "8ft x 10ft",
             "shortDescription": "Springfield University Logo",
@@ -33,6 +37,7 @@
         },
         {
             "productId": "product002_2",
+            "url": "./images/Air Force 6_16.jpeg",
             "productName": "Air Force",
             "size": "8ft x 10ft",
             "shortDescription": "Air Force Logo",
@@ -40,6 +45,7 @@
         },
         {
             "productId": "product002_3",
+            "url": "./images/St. Thomas 6_22.jpeg",
             "productName": "St. Thomas",
             "size": "8ft x 10ft",
             "shortDescription": "St. Thomas College Logo",
@@ -47,6 +53,7 @@
         },
         {
             "productId": "product003_1",
+            "url": "./images/UND 6_15.jpeg",
             "productName": "UND",
             "size": "8ft x 10ft",
             "shortDescription": "University of North Dakota Logo",
@@ -54,6 +61,7 @@
         },
         {
             "productId": "product003_2",
+            "url": "./images/UWEC 6_9.jpeg",
             "productName": "UWEC",
             "size": "8ft x 10ft",
             "shortDescription": "University of Wisconsin Eau Claire Logo",
@@ -62,6 +70,7 @@
        
         {
             "productId": "product003_3",
+            "url": "./images/American Flag 7_1.jpeg",
             "productName": "American Flag",
             "size": "8ft x 10ft",
             "shortDescription": "American Flag Logo",

@@ -23,7 +23,7 @@ function getInputValue() {
   .then(myMovies => loadMovies(myMovies));
   let movieName = document.forms["my_form"]["inputMovieName"]["inputMovieUrl"];
   let inputMovieName = movieName.value;
+  let inputMovieUrl = movieName.value;
   function loadMovies(myMovies) {
   var mainContainer = document.getElementById("goodmovies");
-  for (var i = 0; i<myMovies.movies.length; i++){
-  if (myMovies.movies[i].title === inputMovieName) {
+ 
