@@ -67,6 +67,31 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
           }
+
+          .main_img{
+            position: relative;
+            height: 250px;
+            width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+          }
+
+          .centered{
+            text-align: center;
+          }
+
+          .border{
+            border: 5px;
+            border-width: 3px;
+            margin: auto;
+          }
+
+          .headshots{
+            padding: 7%;
+            margin-top: -5%;
+          }
+
         </style>
     
       </head>
@@ -106,75 +131,70 @@
         
         <div class="album py-5 bg-light" style="margin-top: 5%;">
           <div class="container" style="margin-bottom: -7rem;">
-            <center><h1>Questions For The Owner<br>
-            Keegan Masser</h1></center>
-            
+            <h1 class="centered border">About Us</h1>
+            <h4 class="centered">Meet the CEO: Keegan Masser</h4>
+            <img src="./images/keegan_headshot.jpg" alt="Keegan_Headshot" class="main_img">
+            <p class="centered">
+              Keegan is currently a student in the Carlson School of Management at the Univeristy of Minnesota <br>
+              Keegan currently designs and paints all Yard Logos by himself, but is looking to expand in the near future.
+            </p>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-             
-              <h2>Why was Yard Logo started?</h2>
-              <h2 style="text-align: end;">What is your background with art?</h2>
-            <p> Keegan took PSEO classes as a senior and had a lot of free time on his hands,
-              so he decided to recycle an old idea and turn it into a buisness. YardLogo began in late spring/ early summer of 2021 and as of January of 2023 YardLogo offically became an LLC through the state of Minnesota.
+              <h2>How Did Yard Logo Start?</h2>
+              <h2 style="text-align: end;">How Does A Logo Get Made?</h2>
+            <p> 
+              "Yard Logo began like most other companies, as an idea in a garage. 
+              I came up with the idea for Yard Logo while watching football games and seeing the large logo at midfield. 
+              Being early on in high school, I did not act on this idea until a few years later, when I began stenciling out logos on large pieces of cardboard." -Keegan
             </p>
             
-            <p style="text-align: end;">Keegan experimented in painting college logos for grad parties when he painted a kansas "KU" 
-              for his sisters graduation party. Since the start of YardLogo, he served 19 parties in 2021, 36 parties in 2022, 
-              and now that he has mastered the technique, he plans to have another successful summer working for YardLogo.
+            <p style="text-align: end;">
+              "The first step is to design a stencil using cardboard. Luckily, I have saved previously done logos, which makes the process much simpler.
+              Then, once the stencil is done, I use it to create an outline. I can then fill the tape outline in with paint. 
+              After a few hours of drying and a couple more coats of paint, your logo is good to go!" -Keegan
             </p>
             
             </div>
 
-
-
-
-
-
-            <center><h1>Website Creators</h1></center>
+            <h1 class="centered" style="margin: auto;">Website Creators</h1>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-3">
-              <div class="col">
-                
-                <center>
-                  <img style="padding: 10%;" src="./images/2p2pwqck.png" height="300" width="320"alt="Iowa University">
+              <div class="col centered">
+                  <img class="headshots" src="./images/2p2pwqck.png" height="300" width="320"alt="Nick Headshot">
                   <div class="card-body">
-                    <p class="card-text">Nick Pinnello <br>
-                    Email: npin@iastate.edu</p>
+                    <h4 class="card-text">Nick Pinnello</h4>
+                    <p>Email: npin@iastate.edu</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <div class="btn-group"style="position: absolute;">
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/npinnello">Github</a></button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.linkedin.com/in/nicholas-pinnello-b5a052213/">Linkedin</a></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary center_button"><a href="https://github.com/npinnello">Github</a></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary center_button"><a href="https://www.linkedin.com/in/nicholas-pinnello-b5a052213/">Linkedin</a></button>
                       </div>
-                      
                     </div>
                   </div>
-               </center>
               </div>
             
-              <div class="col">
-               <center>
-                  <img style="padding: 10%;" src="./images/125076483.jpg" height="300" width="300" alt="Iowa University">
+              <div class="col centered">
+                  <img class="headshots" src="./images/125076483.jpg" height="300" width="300" alt="Alex Headshot">
                   <div class="card-body">
-                    <p class="card-text">Alex Moeller <br>
-                    Email: alexmoe@iastate.edu </p>
+                    <h4 class="card-text">Alex Moeller</h4>
+                    <p>Email: alexmoe@iastate.edu</p>
                     <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group" style="align-items: right;">
-                        <button type="button" style="position: sticky;" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/npinnello">Github</a></button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.linkedin.com/in/nicholas-pinnello-b5a052213/">Linkedin</a></button>
-                      </div>
-                    </center>
-                      
+                      <div class="btn-group">
+                        <button type="button" style="position: sticky;" class="btn btn-sm btn-outline-secondary center_button" ><a href="https://github.com/Alex-Moeller7">Github</a></button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary center_button"><a href="https://www.linkedin.com/in/alex-moeller-53b0b7250/">Linkedin</a></button>
+                      </div> 
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        
       </div>
       
-      
       </main>
-      
-   
+      <!--FIXME-->
+      <footer>
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p style="color:blue">Yard Logo Inc. 2020-2023 <br></p>
+      </footer>
       
           <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
             
