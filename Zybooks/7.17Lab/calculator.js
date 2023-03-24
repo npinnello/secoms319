@@ -1,3 +1,5 @@
+
+
 function updateScore() {
     if (attackVectorSelectedValue.length != 0 &&
     attackComplexitySelectedValue.length != 0 &&
