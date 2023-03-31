@@ -1,8 +1,48 @@
 
 //Add your code under this line
 
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const form = document.getElementById('checkout-form')
+const inputCard = document.querySelector('#inputCard')
+const alertTrigger = document.getElementById('submit-btn')
+const summaryCard = document.querySelector('.card')
+const summaryList = document.querySelector('.card > ul')
+
+var order = { name: '', email: '', card: '' }
 
 
+const alert = (message, type) => {
+    const wrapper = document.createElement('div')
+    wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    ` <div>${message}</div>`,
+    ' <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+    ].join('')
+    alertPlaceholder.append(wrapper)
+    }
+
+    function isNumeric (n) {
+        return !isNaN(parseFloat(n)) && isFinite(n)
+        }
+        inputCard.addEventListener('input', event => {
+        if (!inputCard.value) {
+        return event.preventDefault() // stops modal from being shown
+        } else {
+        inputCard.value = inputCard.value.replace(/-/g, '')
+        let newVal = ''
+        for (var i = 0, nums = 0; i < inputCard.value.length; i++) {
+        if (nums != 0 && nums % 4 == 0) {
+        newVal += '-'
+        }
+        newVal += inputCard.value[i]
+        if (isNumeric(inputCard.value[i])) {
+        nums++
+        }
+        }
+        inputCard.value = newVal
+        }
+        })
 
 
 let validate = function(){
@@ -55,3 +95,13 @@ let validate = function(){
   return val;
 }
 
+form.addEventListener('submit', event => {
+    //if (!form.checkValidity()) {
+    if (!validate()) {
+    alertPlaceholder.innerHTML = ''
+    alert('<i class="bi-exclamation-circle"></i> Something went wrong!','danger')
+    }
+    event.preventDefault()
+    event.stopPropagation()
+    //form.classList.add('was-validated')
+    }, false )
