@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request Methods </title>
+
+<script src="app.js"></script>
+
+</head>
+<body>
+<h1>Request Method.</h1>
+
+<h1>Get Method.</h1>
+<button onclick="getMethod()">Show All users</button>
+<hr>
+<h1>Output:</h1>
+<pre id="showData"></pre>
+<script>
+
+function getMethod() {
+fetch('http://localhost:8081/listUsers')
+.then(response => response.json())
+.then(data => {
+console.log(data);
+var container = document.getElementById("showData");
+container.innerHTML = JSON.stringify(data,undefined,2);
+})
+};
+
+function getMethodById(id) {
+                fetch('http://localhost:8081/' + id)
+                .then(response => response.json())
+                .then(data => {
+                console.log(data);
+                var container = document.getElementById("showData");
+                container.innerHTML = JSON.stringify(data,undefined,2);
+                });
+                };
+
+</script>
+
+<h1>Get Method .</h1>
+<button onclick="getMethodById('1')">Show user 1</button>
+<button onclick="getMethodById('2')">Show user 2</button>
+<button onclick="getMethodById('3')">Show user 3</button>
+
+
+
+
+
+</body>
+</html>
