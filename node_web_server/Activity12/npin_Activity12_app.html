@@ -10,13 +10,17 @@
 
 </head>
 <body>
+    <p>
+        Author: Nick Pinnello <br>
+        ISU Netid : npin@iastate.edu <br>
+        Date : April 21, 2023
+    </p>
 <h1>Request Method.</h1>
 
 <h1>Get Method.</h1>
 <button onclick="getMethod()">Show All users</button>
 <hr>
-<h1>Output:</h1>
-<pre id="showData"></pre>
+
 <script>
 
 function getMethod() {
@@ -39,12 +43,60 @@ function getMethodById(id) {
                 });
                 };
 
+
+function postMethod() {
+fetch('http://localhost:8081/addUser', {
+method: 'POST',
+headers: { 'content-type': 'application/json' },
+body: JSON.stringify({
+"user600": {
+"id": 600,
+}
+})
+})
+.then(response => response.json())
+.then(data => {
+console.log(data);
+var container = document.getElementById("showData");
+container.innerHTML = JSON.stringify(data);
+});
+}
+
+
+function deleteMethod() {
+console.log("Lets do Delete ....");
+fetch('http://localhost:8081/deleteUser', {
+method: "DELETE",
+headers: { 'content-type': 'application/json' },
+body: JSON.stringify({
+"user600": {
+"id": 600
+}
+})
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch((err) => console.log("Errror:" + err))
+}
+
 </script>
 
 <h1>Get Method .</h1>
 <button onclick="getMethodById('1')">Show user 1</button>
 <button onclick="getMethodById('2')">Show user 2</button>
 <button onclick="getMethodById('3')">Show user 3</button>
+
+
+<h1>Post Method. </h1>
+<button onclick="postMethod()">Post user</button>
+
+<h1>DELETE Method .</h1>
+<button onclick="deleteMethod()">Delete</button>
+
+
+<h1>Output:</h1>
+<pre id="showData"></pre>
+
 
 
 

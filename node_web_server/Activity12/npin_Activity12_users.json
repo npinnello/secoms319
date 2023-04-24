@@ -16,5 +16,13 @@
     "password" : "password3",
     "profession" : "researcher",
     "id": 3
-    }
+    },
+    
+        "user600" : {
+        "name": "Abraham600",
+        "password": "password600",
+        "profession": "teacher",
+        "id": 600
+        }
+        
     }
