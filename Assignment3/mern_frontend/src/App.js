@@ -22,6 +22,8 @@ function App() {
     getAllProducts();
   }, []);
 
+  
+
   function handleChange(evt) {
     const value = evt.target.value;
     if (evt.target.name === "_id") {
@@ -139,6 +141,16 @@ function App() {
     }
   }
 
+  const showOneItem = oneProduct.map((el) => (
+    <div key={el._id}>
+      <img src={el.image} width={30} /> <br />
+      Title: {el.title} <br />
+      Category: {el.category} <br />
+      Price: {el.price} <br />
+      Rate :{el.rating.rate} and Count:{el.rating.count} <br />
+    </div>
+  ));
+  
   
 
   return (
