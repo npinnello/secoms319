@@ -8,6 +8,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Reviews from './components/Reviews';
 import Gallery from './components/Gallery';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom/dist';
 
 function App() {
