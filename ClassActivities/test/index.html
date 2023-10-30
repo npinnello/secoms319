@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
+    
+    <ul id="cart">
+      <!-- Shopping cart items will be added dynamically using JavaScript -->
+    </ul>
+    
+    <h2>Products</h2>
+    
+    <ul id="products">
+      <li>
+        <span>Product 1</span>
+        <span>$10.00</span>
+        <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+      </li>
+      <li>
+        <span>Product 2</span>
+        <span>$20.00</span>
+        <button onclick="addToCart('Product 2', 20.00)">Add to Cart</button>
+      </li>
+      <li>
+        <span>Product 3</span>
+        <span>$30.00</span>
+        <button onclick="addToCart('Product 3', 30.00)">Add to Cart</button>
+      </li>
+    </ul>
+    
+    <script src="index.js"></script>
+  </body>
+</html>
