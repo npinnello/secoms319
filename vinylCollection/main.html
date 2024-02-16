@@ -31,16 +31,75 @@
         images[0] = "image1.jpg";
         images[1] = "image2.jpg";
         images[2] = "image3.jpg";
+
+        <style>
+        section{  
+  height:100%;
+  display:flex;  
+  align-items:center;  
+  justify-content:center;
+}
+
+.carousel {
+  display: flex;
+  max-width:1000px;
+  gap:20px;      
+}
+
+.carousel.sliding-transition {
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-image {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.arrow-button {
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+  cursor: pointer;
+  background: rgb(255, 255, 255, 0.3);
+  width: 36px;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  -webkit-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.5);
+}
+
+</style> 
+
     </script>
 </head>
 
 <h1 style="text-align: center;" >Nick's Vinyl Collection By Genre</h1>
-<body onload = "startTimer()">
+<!-- 
+<section>
+    <img ... class='bg-image' />
+    <div class="carousel-container">
+      <div class="carousel">
+         images here -->
+      <!-- </div>
+      <button class="arrow-button left-arrow"></button>
+      <button class="arrow-button right-arrow"></button>
+    </div>
+  </section> --> 
 
-    <img id="img" style="text-align: center;" src="startpicture.jpg"/>
-    <br>
-    <button type="button" onclick="displayPreviousImage()">Previous</button>
-    <button type="button" onclick="displayNextImage()">Next</button>
+
     <div class="row" style="margin-top: 5%;">
        
             <center>
