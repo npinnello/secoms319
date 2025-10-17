@@ -1,1 +1,57 @@
-<p>album-detail works!</p>
+<div class="container mt-4">
+  @if (album) {
+    <div class="row">
+      <div class="col-md-4">
+        <img [src]="album.image" class="img-fluid rounded shadow album-cover-large" [alt]="album.title">
+      </div>
+      <div class="col-md-8">
+        <div class="album-info">
+          <h1 class="display-4">{{ album.title }}</h1>
+          <h2 class="text-muted mb-3">{{ album.artist }}</h2>
+          
+          <div class="album-meta mb-4">
+            @if (album.year) {
+              <span class="badge bg-primary me-2">{{ album.year }}</span>
+            }
+            <span class="badge bg-secondary text-capitalize">{{ album.genre }}</span>
+          </div>
+          
+          @if (album.description) {
+            <div class="album-description mb-4">
+              <h5>About this Album</h5>
+              <p class="lead">{{ album.description }}</p>
+            </div>
+          }
+          
+          @if (album.trackList && album.trackList.length > 0) {
+            <div class="track-list mb-4">
+              <h5>Track List</h5>
+              <ol class="list-group list-group-numbered">
+                @for (track of album.trackList; track track) {
+                  <li class="list-group-item">{{ track }}</li>
+                }
+              </ol>
+            </div>
+          }
+          
+          <div class="actions mt-4">
+            <button class="btn btn-outline-secondary me-2" (click)="goBack()">
+              <i class="fas fa-arrow-left me-2"></i>Back
+            </button>
+            <button class="btn btn-primary" (click)="navigateToGenre(album.genre)">
+              <i class="fas fa-folder me-2"></i>More {{ album.genre }} Albums
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  } @else {
+    <div class="text-center mt-5">
+      <h3>Album not found</h3>
+      <p class="text-muted">The requested album could not be found.</p>
+      <button class="btn btn-primary" (click)="goBack()">
+        <i class="fas fa-arrow-left me-2"></i>Go Back
+      </button>
+    </div>
+  }
+</div>

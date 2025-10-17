@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { VinylDataService } from '../../services/vinyl-data';
@@ -11,14 +11,12 @@ import { Genre, VinylAlbum } from '../../models/vinyl.interface';
   styleUrl: './home.scss'
 })
 export class HomeComponent implements OnInit {
+  private vinylDataService = inject(VinylDataService);
+  private router = inject(Router);
+  
   genres: Genre[] = [];
   featuredAlbums: VinylAlbum[] = [];
   albumCounts: { [key: string]: number } = {};
-
-  constructor(
-    private vinylDataService: VinylDataService,
-    private router: Router
-  ) {}
 
   ngOnInit() {
     this.loadGenres();

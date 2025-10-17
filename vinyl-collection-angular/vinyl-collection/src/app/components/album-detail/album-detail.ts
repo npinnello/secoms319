@@ -1,26 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Location, CommonModule, TitleCasePipe } from '@angular/common';
+import { Location, CommonModule } from '@angular/common';
 import { VinylDataService } from '../../services/vinyl-data';
 import { VinylAlbum } from '../../models/vinyl.interface';
-import { from } from 'rxjs';
 
 @Component({
   selector: 'app-album-detail',
-  imports: [CommonModule, TitleCasePipe],
+  imports: [CommonModule],
   templateUrl: './album-detail.html',
   styleUrls: ['./album-detail.scss']
 })
 export class AlbumDetailComponent implements OnInit {
+  private route = inject(ActivatedRoute);
+  private router = inject(Router);
+  private location = inject(Location);
+  private vinylDataService = inject(VinylDataService);
+  
   album: VinylAlbum | undefined;
   albumId: string = '';
-
-  constructor(
-    private route: ActivatedRoute,
-    private router: Router,
-    private location: Location,
-    private vinylDataService: VinylDataService
-  ) {}
 
   ngOnInit() {
     this.route.params.subscribe(params => {

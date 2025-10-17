@@ -1,1 +1,47 @@
-<p>genre-collection works!</p>
+<div class="container mt-4">
+  @if (genre) {
+    <div class="mb-4">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <h1 class="display-5">{{ genre.displayName }} Collection</h1>
+          <p class="lead text-muted">{{ genre.description }}</p>
+        </div>
+        <button class="btn btn-outline-secondary" (click)="goBack()">
+          <i class="fas fa-arrow-left me-2"></i>Back to Home
+        </button>
+      </div>
+    </div>
+  }
+
+  @if (albums.length > 0) {
+    <div class="row g-4">
+      @for (album of albums; track album.id) {
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm album-card" (click)="navigateToAlbum(album.id)">
+            <img [src]="album.image" class="card-img-top album-cover" [alt]="album.title">
+            <div class="card-body">
+              <h5 class="card-title">{{ album.title }}</h5>
+              <p class="card-text text-muted">{{ album.artist }}</p>
+              @if (album.year) {
+                <span class="badge bg-secondary">{{ album.year }}</span>
+              }
+              @if (album.description) {
+                <p class="card-text mt-2"><small class="text-muted">{{ album.description }}</small></p>
+              }
+            </div>
+            <div class="card-footer bg-transparent">
+              <button class="btn btn-primary w-100">
+                View Details <i class="fas fa-arrow-right ms-1"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  } @else {
+    <div class="text-center mt-5">
+      <h3>No albums found in this genre</h3>
+      <p class="text-muted">Check back later for updates to the collection.</p>
+    </div>
+  }
+</div>
