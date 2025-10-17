@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/">
+      <i class="fas fa-record-vinyl me-2"></i>
+      Nick's Vinyl Collection
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+            <i class="fas fa-home me-1"></i>Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/genre/rap" routerLinkActive="active">
+            <i class="fas fa-microphone me-1"></i>Rap/Hip-Hop
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/genre/rock" routerLinkActive="active">
+            <i class="fas fa-guitar me-1"></i>Rock
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/genre/soundtracks" routerLinkActive="active">
+            <i class="fas fa-film me-1"></i>Soundtracks
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/genre/pop" routerLinkActive="active">
+            <i class="fas fa-star me-1"></i>Pop
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

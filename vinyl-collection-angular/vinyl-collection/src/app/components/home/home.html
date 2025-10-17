@@ -1,0 +1,63 @@
+<div class="container mt-5">
+  <div class="text-center mb-5">
+    <h1 class="display-4 mb-3">Nick's Vinyl Collection By Genre</h1>
+    <p class="lead text-muted">Explore my curated collection of vinyl records organized by musical genres</p>
+  </div>
+
+  <div class="row g-4">
+    @for (genre of genres; track genre.name) {
+      <div class="col-md-6 col-lg-3">
+        <div class="card h-100 shadow-sm genre-card" (click)="navigateToGenre(genre.name)">
+          <div class="card-body text-center">
+            <div class="genre-icon mb-3">
+              @switch (genre.name) {
+                @case ('rap') {
+                  <i class="fas fa-microphone fa-3x text-primary"></i>
+                }
+                @case ('rock') {
+                  <i class="fas fa-guitar fa-3x text-danger"></i>
+                }
+                @case ('soundtracks') {
+                  <i class="fas fa-film fa-3x text-warning"></i>
+                }
+                @case ('pop') {
+                  <i class="fas fa-star fa-3x text-success"></i>
+                }
+              }
+            </div>
+            <h2 class="card-title h4">{{ genre.displayName }}</h2>
+            <p class="card-text text-muted">{{ genre.description }}</p>
+            <div class="mt-3">
+              <span class="badge bg-secondary">{{ getAlbumCount(genre.name) }} albums</span>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent">
+            <button class="btn btn-primary w-100">
+              View Collection <i class="fas fa-arrow-right ms-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+
+  @if (featuredAlbums.length > 0) {
+    <div class="mt-5">
+      <h2 class="text-center mb-4">Featured Albums</h2>
+      <div class="row g-4">
+        @for (album of featuredAlbums; track album.id) {
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm album-preview" (click)="navigateToAlbum(album.id)">
+              <img [src]="album.image" class="card-img-top album-cover" [alt]="album.title">
+              <div class="card-body">
+                <h5 class="card-title">{{ album.title }}</h5>
+                <p class="card-text text-muted">{{ album.artist }}</p>
+                <span class="badge bg-outline-primary">{{ album.year }}</span>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  }
+</div>
